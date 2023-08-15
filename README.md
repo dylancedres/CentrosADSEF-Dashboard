@@ -1,4 +1,4 @@
-# Social Deternaits of Health
+# Social Determinants of Health
 
 ### Setting up(Windows)
 
