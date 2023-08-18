@@ -28,7 +28,8 @@ def load_json():
 @st.cache_data
 def load_data():
     # sdoh_path = r"C:\Users\ciar\Documents\dylan\data\sdoh.csv"
-    sdoh_path = r"C:\Users\admin\Downloads\dashboard_codes\sdoh.csv"
+    # sdoh_path = r"C:\Users\admin\Downloads\dashboard_codes\sdoh.csv"
+    sdoh_path = "sdoh.csv"
     sdoh = pd.read_csv(sdoh_path, dtype={"COUNTYFIPS":str, "STATEFIPS":str}, low_memory=False)
     return sdoh
     
