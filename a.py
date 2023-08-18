@@ -8,6 +8,31 @@ import plotly.express.colors as pc
 from urllib.request import urlopen
 from time import sleep
 
+
+# Define CSS styles
+st.markdown(
+    """
+    <style>
+    .sidebar .sidebar-content {
+        background-color: #f8f9fa;
+    }
+    .sidebar .sidebar-content a {
+        padding: 10px;
+        margin: 2px;
+        display: block;
+        color: #333;
+        text-decoration: none;
+        border-left: 3px solid transparent;
+    }
+    .sidebar .sidebar-content a:hover {
+        background-color: #dcdcdc;
+        border-left: 3px solid #007bff;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 def load_data():
     ssl._create_default_https_context = ssl._create_unverified_context
 
@@ -96,7 +121,7 @@ def create_dashboard(counties, sdoh):
                          # hover_data={sdoh_selection:True, "COUNTYFIPS":False},   # info contained in counties
                          hover_data={sdoh_selection: True, "COUNTYFIPS": False},  #
                          width=1080,  # map horizontal size/length
-                         height=1000)  # map vertical size/length
+                         height=500)  # map vertical size/length
     # custom_data=sdoh_options)
 
     # Map Background Color
