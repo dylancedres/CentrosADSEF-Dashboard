@@ -24,7 +24,8 @@ except json.decoder.JSONDecodeError as error:
     
 
 # sdoh_path = r"C:\Users\ciar\Documents\dylan\data\sdoh.csv"
-sdoh_path = r"C:\Users\admin\Downloads\dashboard_codes\sdoh.csv"
+# sdoh_path = r"C:\Users\admin\Downloads\dashboard_codes\sdoh.csv"
+sdoh_path = "sdoh.csv"
 sdoh = pd.read_csv(sdoh_path, dtype={"COUNTYFIPS":str, "STATEFIPS":str}, low_memory=False)
 
 # st.title("Dashboard: Social Determinants of Health and Kidney Disease Lab Data")
