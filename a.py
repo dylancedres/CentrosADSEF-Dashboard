@@ -11,39 +11,27 @@ import plotly.graph_objects as go
 import plotly.express.colors as pc
 
 
-
-# File Authentication and Data Frame Creation
 ssl._create_default_https_context = ssl._create_unverified_context
 
-try:
-    with urlopen('https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json') as response:
-        counties = json.load(response)
-        
-except json.decoder.JSONDecodeError as error:
-    print("Failed to load JSON data:", error)
+@st.cache_data
+def load_json():
+    # File Authentication and Data Frame Creation    
+    try:
+        with urlopen('https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json') as response:
+            counties = json.load(response)
+            return counties
+    
+    except json.decoder.JSONDecodeError as error:
+        print("Failed to load JSON data:", error)
     
 
-# sdoh_path = r"C:\Users\ciar\Documents\dylan\data\sdoh.csv"
-# sdoh_path = r"C:\Users\admin\Downloads\dashboard_codes\sdoh.csv"
-sdoh_path = "sdoh.csv"
-sdoh = pd.read_csv(sdoh_path, dtype={"COUNTYFIPS":str, "STATEFIPS":str}, low_memory=False)
-
-# st.title("Dashboard: Social Determinants of Health and Kidney Disease Lab Data")
-# st.header("Dashboard: Social Determinants of Health and Kidney Disease Lab Data")
-st.set_page_config(page_title="Dashboard - Kidney Disease",
-                   page_icon=":test_tube:",
-                   menu_items={"Get help":"mailto:dylan.cedres@upr.edu",
-                               "Report a Bug":"mailto:dylan.cedres@upr.edu",
-                               "About":"Dashboard with Kidney Disease Lab Data and Social Determinants of Health Indices"},
-                   layout="wide")
-
-st.subheader("**Dashboard: Social Determinants of Health and Kidney Disease Lab Data**")
-st.divider()
-st.toast(body="Welcome!", icon="👋")
-sleep(0.5)
-
-
-
+@st.cache_data
+def load_data():
+    # sdoh_path = r"C:\Users\ciar\Documents\dylan\data\sdoh.csv"
+    sdoh_path = r"C:\Users\admin\Downloads\dashboard_codes\sdoh.csv"
+    sdoh = pd.read_csv(sdoh_path, dtype={"COUNTYFIPS":str, "STATEFIPS":str}, low_memory=False)
+    return sdoh
+    
 
 # Columns and Labels to use in "SDOHs Menu"
 sdoh_options = ["ACS_PCT_HH_PUB_ASSIST",    # poverty
@@ -63,13 +51,12 @@ dict_sdohLabels = dict(zip(sdoh_options, labels_for_counties))
 
 # Descriptions to display extra information to users
 descriptions_for_counties = ["Percentage of households with public assistance income or food stamps/SNAP (ZCTA level)",                                          # poverty
-                                "Total civilian employed population (ages 16 and over, ZCTA level)",                                                             # employment
-                                "Percentage of population with less than high school education (ages 25 and over, ZCTA level)",                                  # education
-                                "Percentage of population with no health insurance coverage (ZCTA level)",                                                       # insurance_coverage
-                                "Minimum distance in miles to the nearest urgent care, calculated using population weighted tract ZIP centroids in the county",  # healthcare_access
-                                "Percentage of children living with grandparent householder whose grandparent is not responsible for them (ZCTA level)"]         # extended_family  
+                             "Total civilian employed population (ages 16 and over, ZCTA level)",                                                             # employment
+                             "Percentage of population with less than high school education (ages 25 and over, ZCTA level)",                                  # education
+                             "Percentage of population with no health insurance coverage (ZCTA level)",                                                       # insurance_coverage
+                             "Minimum distance in miles to the nearest urgent care, calculated using population weighted tract ZIP centroids in the county",  # healthcare_access
+                             "Percentage of children living with grandparent householder whose grandparent is not responsible for them (ZCTA level)"]         # extended_family  
 dict_sdohDescriptions = dict(zip(sdoh_options, descriptions_for_counties))
-
 
 
 # Columns and Labels to use in "Labs Menu"
@@ -79,6 +66,21 @@ dict_labLabels = dict(zip(lab_options, labels_for_dots))
 
 
 
+st.set_page_config(page_title="Dashboard - Kidney Disease",
+                   page_icon=":test_tube:",
+                   menu_items={"Get help":"mailto:dylan.cedres@upr.edu",
+                               "Report a Bug":"mailto:dylan.cedres@upr.edu",
+                               "About":"Dashboard with Kidney Disease Lab Data and Social Determinants of Health Indices"},
+                   layout="wide")
+
+counties = load_json()
+sdoh = load_data()
+
+st.title("**Dashboard:** \n  **Social Determinants of Health and Kidney Disease Lab Data**")
+st.divider()
+sleep(0.5)
+# st.title("Dashboard: Social Determinants of Health and Kidney Disease Lab Data")
+# st.header("Dashboard: Social Determinants of Health and Kidney Disease Lab Data")
 
 
 # Determines the Menus placement format
@@ -180,6 +182,7 @@ mapp.update_layout(margin=dict(r=0, t=0, l=0, b=0),  # Application Boundaries
                                family="Rockwell",    # font type for legend title
                                size=16))))           # text size for legend title
 
+@st.cache_data
 def update_mapp():
     mapp.update_traces(selector=dict(type="choropleth"),     # determines map type
                        visible=True,                         # allows this trace to be drawn
@@ -233,6 +236,7 @@ dots.update_traces(showlegend=True,                                        # all
                        # showscale=True,                                   # displays scale values-to-color-intensities
                        # cmax=sdoh[lab_selection].sort_values().loc[38]))  # midpoint
 
+@st.cache_data
 def update_dots():
     dots.update_traces(visible=True,
                        name=dict_labLabels[lab_selection], # sets the trace name in the legend and on datum hover 
@@ -262,7 +266,7 @@ with col2:
 if sdoh_selection:
     update_mapp()
     sleep(0.5)
-    st.toast(body="Current SDOH " + dict_sdohLabels[sdoh_selection], icon="⚕️")
+    st.toast(body="Current SDOH  %s" % dict_sdohLabels[sdoh_selection], icon="⚕️")
         
 if lab_selection:
     update_dots()
