@@ -206,7 +206,7 @@ mapp.update_layout(autosize=False,                                      # allows
                    margin=dict(autoexpand=True, r=0, t=0, l=0, b=0),    # figure's boundaries, distance from the plot's borders to the container's borders
                    
                    width=1200,                                          # map horizontal size/length, same as <width> in px.choropleth(...)
-                   height=500,                                          # map vertical size/length, same as <height> in px.choropleth(...)
+                   height=600,                                          # map vertical size/length, same as <height> in px.choropleth(...)
                                       
                    paper_bgcolor="#f5f5f5",                             # application background color
                    # paper_bgcolor="indigo",
@@ -282,7 +282,7 @@ mapp.update_traces(visible=True,
                        y=0.025,                    
                        
                        thickness=13,                     # thickness size of the bar
-                       len=0.30,                         # length of the bar                       
+                       len=0.40,                         # length of the bar                       
                        
                        title=dict(
                            side="bottom",
@@ -359,7 +359,7 @@ dots.update_traces(showlegend=False,                                      # allo
                            y=0.025,                      
                            
                            thickness=13,                                   # thickness size of the bar
-                           len=0.30,                                       # length of the bar
+                           len=0.40,                                       # length of the bar
                            
                            title=dict(
                                side="bottom",
@@ -387,7 +387,7 @@ mapp.append_trace(dots.data[0], row="all", col="all")
 with col2:
     # Display the plot and all its traces
     st.plotly_chart(mapp,
-                    use_container_width=True,
+                    # use_container_width=True,
                     config={"displayModeBar":"hover",  # Sets the mode bar to appear only when the mouse is inside the plot
                             "displaylogo":False,       # Removes the Plotly-Dash logo from appearing in the mode bar options
                             "scrollZoom":False})
