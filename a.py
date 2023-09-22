@@ -364,7 +364,7 @@ dots.update_traces(showlegend=False,                                      # allo
                            title=dict(
                                side="bottom",
                                text=dict_labLabels[lab_selection],
-                               font=dict(color="#303030", family="Rockwell", size=10)), 
+                               font=dict(color="#303030", family="Rockwell", size=11)), 
                            
                            tickmode="linear",
                            tick0=0,
@@ -374,7 +374,7 @@ dots.update_traces(showlegend=False,                                      # allo
                            tickwidth=1.30,
                            ticklen=4,
                            tickcolor="black",
-                           tickfont=dict(color="#303030", family="Rockwell", size=9)))          
+                           tickfont=dict(color="#303030", family="Rockwell", size=10)))          
                    )
 
 
