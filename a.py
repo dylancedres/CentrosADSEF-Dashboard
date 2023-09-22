@@ -205,8 +205,8 @@ mapp.update_geos(scope="world",                         # sets section of world 
 mapp.update_layout(autosize=False,                                      # allows custom size
                    margin=dict(autoexpand=True, r=0, t=0, l=0, b=0),    # figure's boundaries, distance from the plot's borders to the container's borders
                    
-                   width=1500,                                          # map horizontal size/length, same as <width> in px.choropleth(...)
-                   height=750,                                          # map vertical size/length, same as <height> in px.choropleth(...)
+                   width=1450,                                          # map horizontal size/length, same as <width> in px.choropleth(...)
+                   height=725,                                          # map vertical size/length, same as <height> in px.choropleth(...)
                                       
                    paper_bgcolor="#f5f5f5",                             # application background color
                    # paper_bgcolor="indigo",
