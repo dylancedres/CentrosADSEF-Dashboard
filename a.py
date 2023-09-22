@@ -197,7 +197,7 @@ mapp.update_geos(scope="world",                         # sets section of world 
                  visible=False,                         # removes all other countries and continents, same as <basemap_visible> in px.choropleth(...)
                  center=dict(lat=18.155, lon=-66.255),  # sets center coordinates of the figure's map projection
                  bgcolor="#f5f5f5",                     # background color name: "whitesmoke"
-                 projection_scale=177,                  # sets the map's initial zoom and projection type
+                 projection_scale=175,                  # sets the map's initial zoom and projection type
                  showframe=False,                       # shows the border lines of the map's plot box
                  )
 
@@ -205,8 +205,8 @@ mapp.update_geos(scope="world",                         # sets section of world 
 mapp.update_layout(autosize=False,                                      # allows custom size
                    margin=dict(autoexpand=True, r=0, t=0, l=0, b=0),    # figure's boundaries, distance from the plot's borders to the container's borders
                    
-                   width=1400,                                          # map horizontal size/length, same as <width> in px.choropleth(...)
-                   height=700,                                          # map vertical size/length, same as <height> in px.choropleth(...)
+                   width=1500,                                          # map horizontal size/length, same as <width> in px.choropleth(...)
+                   height=750,                                          # map vertical size/length, same as <height> in px.choropleth(...)
                                       
                    paper_bgcolor="#f5f5f5",                             # application background color
                    # paper_bgcolor="indigo",
