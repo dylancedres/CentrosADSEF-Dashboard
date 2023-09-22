@@ -282,7 +282,7 @@ mapp.update_traces(visible=True,
                        y=0.025,                    
                        
                        thickness=13,                     # thickness size of the bar
-                       len=0.40,                         # length of the bar                       
+                       len=0.30,                         # length of the bar                       
                        
                        title=dict(
                            side="bottom",
@@ -359,7 +359,7 @@ dots.update_traces(showlegend=False,                                      # allo
                            y=0.025,                      
                            
                            thickness=13,                                   # thickness size of the bar
-                           len=0.40,                                       # length of the bar
+                           len=0.30,                                       # length of the bar
                            
                            title=dict(
                                side="bottom",
