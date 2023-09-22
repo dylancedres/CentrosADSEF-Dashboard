@@ -133,7 +133,7 @@ with title2:
 
     
 ### Dropdown Menus and SDoHs Descriptions ###
-col1, col2 = st.columns([0.20, 0.80], gap="large")
+col1, col2 = st.columns([0.20, 0.80], gap="medium")
 # col1, col2 = st.columns([0.175, 0.825], gap="medium")
 
 with col1:
