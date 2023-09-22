@@ -287,7 +287,7 @@ mapp.update_traces(visible=True,
                        title=dict(
                            side="bottom",
                            text=dict_sdohLabels[sdoh_selection],
-                           font=dict(color="#303030", family="Rockwell", size=10)),   
+                           font=dict(color="#303030", family="Rockwell", size=11)),   
                        
                        tickmode="array",
                        tickvals=sdoh_tickvals,
@@ -298,7 +298,7 @@ mapp.update_traces(visible=True,
                        tickwidth=1.35,
                        ticklen=3.5,
                        tickcolor="black",
-                       tickfont=dict(color="#303030", family="Rockwell", size=9))
+                       tickfont=dict(color="#303030", family="Rockwell", size=10))
                   )
 
 
