@@ -116,7 +116,8 @@ sdoh = load_data()      # SDOHs and Labs Data
 
 
 ### Dashboard Main Title ###
-title_buff, title2 = st.columns([0.28, 0.72])
+title_buff, title2 = st.columns([0.30, 0.70])
+# title_buff, title2 = st.columns([0.28, 0.72])
 # title1, title_buff, title2 = st.columns([0.20, 0.30, 0.50])
 
 # with title1:
@@ -132,7 +133,8 @@ with title2:
 
     
 ### Dropdown Menus and SDoHs Descriptions ###
-col1, col2 = st.columns([0.175, 0.835], gap="medium")
+col1, col2 = st.columns([0.18, 0.82], gap="medium")
+# col1, col2 = st.columns([0.175, 0.825], gap="medium")
 
 with col1:
     st.markdown(body="")
@@ -205,8 +207,10 @@ mapp.update_geos(scope="world",                         # sets section of world 
 mapp.update_layout(autosize=False,                                      # allows custom size
                    margin=dict(autoexpand=True, r=0, t=0, l=0, b=0),    # figure's boundaries, distance from the plot's borders to the container's borders
                    
-                   width=1425,                                          # map horizontal size/length, same as <width> in px.choropleth(...)
-                   height=712.5,                                          # map vertical size/length, same as <height> in px.choropleth(...)
+                   # width=1425,                                          # map horizontal size/length, same as <width> in px.choropleth(...)
+                   # height=712.5,                                          # map vertical size/length, same as <height> in px.choropleth(...)
+                   width=1300,
+                   height=650,
                                       
                    paper_bgcolor="#f5f5f5",                             # application background color
                    # paper_bgcolor="indigo",
