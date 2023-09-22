@@ -195,7 +195,7 @@ mapp = px.choropleth(data_frame=sdoh,                                        # d
 mapp.update_geos(scope="world",                         # sets section of world map
                  fitbounds=False,                       # removes mapping of locations with geojson coordinates, same as <fitbounds> in px.choropleth(...)
                  visible=False,                         # removes all other countries and continents, same as <basemap_visible> in px.choropleth(...)
-                 center=dict(lat=18.155, lon=-66.265),  # sets center coordinates of the figure's map projection
+                 center=dict(lat=18.155, lon=-66.245),  # sets center coordinates of the figure's map projection
                  bgcolor="#f5f5f5",                     # background color name: "whitesmoke"
                  projection_scale=172,                  # sets the map's initial zoom and projection type
                  showframe=False,                       # shows the border lines of the map's plot box
