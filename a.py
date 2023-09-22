@@ -278,7 +278,7 @@ mapp.update_traces(visible=True,
                        outlinecolor="black",             # sets the color of the bar's borders
                        outlinewidth=1.05,                # sets thickness of the borders' lines
                        
-                       x=0.725,
+                       x=0.72,
                        y=0.025,                    
                        
                        thickness=13,                     # thickness size of the bar
@@ -355,7 +355,7 @@ dots.update_traces(showlegend=False,                                      # allo
                            outlinecolor="black",                          # sets the color of the bar's borders
                            outlinewidth=1.05,                             # sets thickness of the borders' lines
                            
-                           x=0.275,
+                           x=0.28,
                            y=0.025,                      
                            
                            thickness=13,                                   # thickness size of the bar
