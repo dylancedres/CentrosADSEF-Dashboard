@@ -116,7 +116,7 @@ sdoh = load_data()      # SDOHs and Labs Data
 
 
 ### Dashboard Main Title ###
-title_buff, title2 = st.columns([0.32, 0.68])
+title_buff, title2 = st.columns([0.34, 0.66])
 # title_buff, title2 = st.columns([0.28, 0.72])
 # title1, title_buff, title2 = st.columns([0.20, 0.30, 0.50])
 
@@ -133,7 +133,7 @@ with title2:
 
     
 ### Dropdown Menus and SDoHs Descriptions ###
-col1, col2 = st.columns([0.18, 0.82], gap="large")
+col1, col2 = st.columns([0.20, 0.80], gap="large")
 # col1, col2 = st.columns([0.175, 0.825], gap="medium")
 
 with col1:
