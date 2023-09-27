@@ -215,8 +215,8 @@ mapp.update_layout(autosize=False,                                      # allows
                    # height=712.5,                                          # map vertical size/length, same as <height> in px.choropleth(...)
                    # width=1375,
                    # height=687.5,
-                   width=1300,
-                   height=650,
+                   width=1200,
+                   height=600,
                                       
                    paper_bgcolor="#f5f5f5",                             # application background color
                    # paper_bgcolor="indigo",
