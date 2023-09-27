@@ -132,7 +132,9 @@ with logo:
     
 with title:
     # Application's Main Title (CENTER)
-    st.markdown("  ")
+    st.markdown("")
+    st.markdown("")
+    st.markdown("")
     st.subheader("**Kidney Disease Lab Test / Social Determinants of Health (SDoH) - Puerto Rico**", anchor=False)
     
 
