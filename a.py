@@ -127,7 +127,7 @@ logo, title = st.columns([0.34, 0.66])
     # st.title("Dashboard: Social Determinants of Health and Kidney Disease Lab Data")
     # st.header("Dashboard: Social Determinants of Health and Kidney Disease Lab Data")
 with logo:
-    st.image("logo.png", use_column_width="always")
+    st.image("logo.png", width=200)
     
 with title:
     # Application's Main Title (CENTER)
