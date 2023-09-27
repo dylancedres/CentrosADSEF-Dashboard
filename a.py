@@ -14,7 +14,7 @@ import plotly.express.colors as pc
 ssl._create_default_https_context = ssl._create_unverified_context
 
 # File Authentication
-@st.cache_data
+# @st.cache_data
 def load_json():
     try:
         with urlopen('https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json') as response:
