@@ -132,7 +132,7 @@ with logo:
     
 with title:
     # Application's Main Title (CENTER)
-    st.subheader("**Kidney Disease Lab Test / Social Determinants of Health (SDoH) - Puerto Rico**", anchor=False)
+    st.subheader("    **Kidney Disease Lab Test / Social Determinants of Health (SDoH) - Puerto Rico**", anchor=False)
     
 
     
