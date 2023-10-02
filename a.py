@@ -404,8 +404,9 @@ with col2:
                     config={"displayModeBar":"hover",  # Sets the mode bar to appear only when the mouse is inside the plot
                             "displaylogo":False,       # Removes the Plotly-Dash logo from appearing in the mode bar options
                             "scrollZoom":False})
-    
-    st.write(mapp.element_width)
+
+    st.write(mapp.layout.width)
+    st.write(col2.element_width)
     
 # if sdoh_selection:
 #     st.toast(body="Current SDOH  %s" % dict_sdohLabels[sdoh_selection], icon="⚕️") 
