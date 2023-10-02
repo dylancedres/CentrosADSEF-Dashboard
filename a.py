@@ -400,7 +400,7 @@ mapp.append_trace(dots.data[0], row="all", col="all")
 with col2:
     # Display the plot and all its traces
     st.plotly_chart(mapp,
-                    # use_container_width=True,
+                    use_container_width=True,
                     config={"displayModeBar":"hover",  # Sets the mode bar to appear only when the mouse is inside the plot
                             "displaylogo":False,       # Removes the Plotly-Dash logo from appearing in the mode bar options
                             "scrollZoom":False})
