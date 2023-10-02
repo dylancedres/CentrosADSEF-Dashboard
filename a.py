@@ -416,7 +416,7 @@ hide_style = """
         </style>
         """
 st.markdown(hide_style, unsafe_allow_html=True) 
-print(col2)
-print(help(st.columns))
+
+print(help(st.container))
 
 
