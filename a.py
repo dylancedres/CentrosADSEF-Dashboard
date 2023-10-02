@@ -416,5 +416,6 @@ hide_style = """
         </style>
         """
 st.markdown(hide_style, unsafe_allow_html=True) 
-st.write(f"col2 width in pixels: {col2.width}")
+st.write(col2)
+
 
