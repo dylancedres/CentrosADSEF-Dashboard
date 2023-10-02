@@ -405,6 +405,8 @@ with col2:
                             "displaylogo":False,       # Removes the Plotly-Dash logo from appearing in the mode bar options
                             "scrollZoom":False})
     
+    st.write(mapp.element_width)
+    
 # if sdoh_selection:
 #     st.toast(body="Current SDOH  %s" % dict_sdohLabels[sdoh_selection], icon="⚕️") 
 # if lab_selection:
