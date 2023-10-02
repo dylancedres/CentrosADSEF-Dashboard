@@ -219,7 +219,7 @@ mapp.update_layout(autosize=False,                                      # allows
                    # width=1375,
                    # height=687.5,
                    # width=1100,
-                   # height=550,
+                   height=600,
                                       
                    paper_bgcolor="#f5f5f5",                             # application background color
                    # paper_bgcolor="indigo",
@@ -417,6 +417,7 @@ hide_style = """
         """
 st.markdown(hide_style, unsafe_allow_html=True) 
 
-print(help(st.container))
-
+st.markdown()
+st.divider()
+st.markdown()
 
