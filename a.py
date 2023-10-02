@@ -416,6 +416,6 @@ hide_style = """
         </style>
         """
 st.markdown(hide_style, unsafe_allow_html=True) 
-st.write(col2)
+st.write(help(col2))
 
 
