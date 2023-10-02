@@ -412,6 +412,7 @@ with col2:
 
 hide_style = """
         <style>
+        header {visibility: hidden;}
         footer {visibility: hidden;}
         </style>
         """
