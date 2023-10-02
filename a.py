@@ -412,9 +412,9 @@ with col2:
 
 hide_style = """
         <style>
-        header {visibility: hidden;}
         footer {visibility: hidden;}
         </style>
         """
 st.markdown(hide_style, unsafe_allow_html=True) 
+st.write(col2.width)
 
