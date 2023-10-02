@@ -410,14 +410,15 @@ with col2:
 # if lab_selection:
 #     st.toast(body="Current Lab " + dict_labLabels[lab_selection], icon="🧪")
 
+
+st.markdown(body="")
+st.divider()
+st.markdown(body="")
+
+
 hide_style = """
         <style>
         footer {visibility: hidden;}
         </style>
         """
 st.markdown(hide_style, unsafe_allow_html=True) 
-
-st.markdown()
-st.divider()
-st.markdown()
-
