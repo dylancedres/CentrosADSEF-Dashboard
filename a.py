@@ -406,7 +406,14 @@ with col2:
                             "scrollZoom":False})
     
 # if sdoh_selection:
-#     st.toast(body="Current SDOH  %s" % dict_sdohLabels[sdoh_selection], icon="⚕️")
-        
+#     st.toast(body="Current SDOH  %s" % dict_sdohLabels[sdoh_selection], icon="⚕️") 
 # if lab_selection:
 #     st.toast(body="Current Lab " + dict_labLabels[lab_selection], icon="🧪")
+
+hide_style = """
+        <style>
+        footer {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_style, unsafe_allow_html=True) 
+
