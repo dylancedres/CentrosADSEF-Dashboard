@@ -173,7 +173,7 @@ with col1:
     
     st.markdown(body="")
     sdoh_description = st.markdown(body=dict_sdohDescriptions[sdoh_selection],
-                                  help=dict_sdohLabels[sdoh_selection])
+                                   help=dict_sdohLabels[sdoh_selection])
 
 
 
@@ -218,8 +218,8 @@ mapp.update_layout(autosize=False,                                      # allows
                    # height=712.5,                                          # map vertical size/length, same as <height> in px.choropleth(...)
                    # width=1375,
                    # height=687.5,
-                   width=1100,
-                   height=550,
+                   # width=1100,
+                   # height=550,
                                       
                    paper_bgcolor="#f5f5f5",                             # application background color
                    # paper_bgcolor="indigo",
