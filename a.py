@@ -146,6 +146,9 @@ with title:
 col1, col2 = st.columns([0.20, 0.80], gap="medium")
 # col1, col2 = st.columns([0.175, 0.825], gap="medium")
 
+
+st.markdown(body="<br>", unsafe_allow_html=True)
+# st.divider()
 with col1:
     st.markdown(body="")
     st.markdown(body="")
