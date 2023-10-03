@@ -414,11 +414,24 @@ with col2:
 #     st.toast(body="Current Lab " + dict_labLabels[lab_selection], icon="🧪")
 
 
+# Dividing line for the resources information
 st.markdown(body="")
 st.divider()
 st.markdown(body="")
 
 
+st.markdown("<p style='text-align:center; color: black;'>
+                SDoHs were obtained from Agency for Healthcare Research and Quality (AHRQ) database (https://www.ahrq.gov/)<br>
+                Kidney-related lab test results were obtained as part of the pilot project supported by the Office of the Director,<br>
+                National Institutes of Health Common Fund under award number 1OT2OD032581-01 (Artificial Intelligence/Machine Learning Consortium to Advance Health Equity and Researcher Diversity (AIM-AHEAD)).<br><br> 
+                It was also supported by the Center for Collaborative Research in Health Disparities (CCRHD),<br>
+                RCMI grant U54 MD007600 (National Institute on Minority Health and Health Disparities) from the National Institutes of Health.<br><br> 
+                The work is solely the authors' responsibility and does not necessarily represent the official view of the National Institutes of Health.
+            </p>", unsafe_allow_html=True)
+
+
+
+# Removes "Made with Streamlit"
 hide_style = """
         <style>
         footer {visibility: hidden;}
