@@ -137,7 +137,7 @@ with title:
     st.markdown("")
     st.markdown("""<p style='text-align:center; font-weight:bold; font-size:26px'>
                     Kidney Disease Lab Test / Social Determinants of Health (SDoH) - Puerto Rico
-                </p>""")
+                </p>""", unsafe_allow_html=True)
     # st.subheader("**Kidney Disease Lab Test / Social Determinants of Health (SDoH) - Puerto Rico**", anchor=False)
     
 
