@@ -116,7 +116,8 @@ sdoh = load_data()      # SDOHs and Labs Data
 
 
 ### Dashboard Main Title ###
-logo, buff, title = st.columns([0.15, 0.10, 0.75])
+logo1, title, logo2 = st.columns([0.15, 0.10, 0.75])
+# logo, buff, title = st.columns([0.15, 0.10, 0.75])
 # logo, logo_buff = st.columns([0.25, 0.75])
 # title_buff, title = st.columns([0.34, 0.66])
 # title_buff, title2 = st.columns([0.28, 0.72])
@@ -126,10 +127,16 @@ logo, buff, title = st.columns([0.15, 0.10, 0.75])
     # Application's Main Title (LEFT)
     # st.subheader("Kidney Disease Lab Test / Social Determinants of Health (SDoH)")
     # st.title("Dashboard: Social Determinants of Health and Kidney Disease Lab Data")
-    # st.header("Dashboard: Social Determinants of Health and Kidney Disease Lab Data")
-with logo:
-    st.image("logo.jpeg", width=200, output_format="PNG")
-    
+#     # st.header("Dashboard: Social Determinants of Health and Kidney Disease Lab Data")
+# with logo:
+#     st.image("logo.jpeg", width=200, output_format="PNG")
+
+with logo1:
+    st.image("logo_ccr_rcmi.png")
+
+with logo2:
+    st.image("logo_aim_ahead.png")
+
 with title:
     # Application's Main Title (CENTER)
     st.markdown("")
