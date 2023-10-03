@@ -418,7 +418,7 @@ st.markdown(body="")
 
 
 # Resources Information Paragraph
-st.markdown("""<p style='text-align:center; color: black;'>
+st.markdown("""<p style='text-align:center;'>
                 SDoHs were obtained from Agency for Healthcare Research and Quality (AHRQ) database (https://www.ahrq.gov/)<br>
                 Kidney-related lab test results were obtained as part of the pilot project supported by the Office of the Director,<br>
                 National Institutes of Health Common Fund under award number 1OT2OD032581-01 (Artificial Intelligence/Machine Learning Consortium to Advance Health Equity and Researcher Diversity (AIM-AHEAD)).<br><br> 
