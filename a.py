@@ -135,7 +135,10 @@ with title:
     st.markdown("")
     st.markdown("")
     st.markdown("")
-    st.subheader("**Kidney Disease Lab Test / Social Determinants of Health (SDoH) - Puerto Rico**", anchor=False)
+    st.markdown("""<p style='text-align:center; font-weight:bold; font-size:26px'>
+                    Kidney Disease Lab Test / Social Determinants of Health (SDoH) - Puerto Rico
+                </p>""")
+    # st.subheader("**Kidney Disease Lab Test / Social Determinants of Health (SDoH) - Puerto Rico**", anchor=False)
     
 
     
@@ -430,9 +433,8 @@ st.markdown("""<p style='text-align:center;'>
 
 
 # Removes "Made with Streamlit"
-hide_style = """
-        <style>
-        footer {visibility: hidden;}
-        </style>
-        """
+hide_style = """<style>
+                 footer {visibility: hidden;}
+             </style>"""
+
 st.markdown(hide_style, unsafe_allow_html=True) 
