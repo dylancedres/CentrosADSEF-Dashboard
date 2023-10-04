@@ -219,7 +219,7 @@ mapp.update_geos(scope="world",                         # sets section of world 
                  center=dict(lat=18.155, lon=-66.245),  # sets center coordinates of the figure's map projection
                  bgcolor="#f5f5f5",                     # background color name: "whitesmoke"
                  projection_scale=172,                  # sets the map's initial zoom and projection type
-                 showframe=True,                       # shows the border lines of the map's plot box
+                 # showframe=True,                       # shows the border lines of the map's plot box
                  )
 
 # Map's Figure Layout
@@ -231,7 +231,7 @@ mapp.update_layout(autosize=False,                                      # allows
                    # width=1375,
                    # height=687.5,
                    # width=1100,
-                   height=600,
+                   height=650,
                                       
                    paper_bgcolor="#f5f5f5",                             # application background color
                    # paper_bgcolor="indigo",
