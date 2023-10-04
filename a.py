@@ -138,7 +138,7 @@ with logo1:
 
 with title:
     # Application's Main Title (CENTER)
-    st.markdown("<br>", unsafe_allow_html=True)
+    st.markdown("<br><br>", unsafe_allow_html=True)
     st.markdown("""<p style='text-align:center; font-weight:bold; font-size:30px'>
                     Kidney Disease Lab Test / Social Determinants of Health (SDoH) - Puerto Rico
                 </p>""", unsafe_allow_html=True)
@@ -148,13 +148,12 @@ with logo2:
     st.image("logo_aim_ahead.png", use_column_width=True)
 
 
-
 ### Dropdown Menus and SDoHs Descriptions ###
 col1, col2 = st.columns([0.20, 0.80], gap="medium")
 # col1, col2 = st.columns([0.175, 0.825], gap="medium")
 
 
-st.markdown(body="<br>", unsafe_allow_html=True)
+st.markdown(body="<br><br>", unsafe_allow_html=True)
 # st.divider()
 with col1:
     st.markdown(body="")
