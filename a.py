@@ -134,7 +134,7 @@ logo1, title, logo2 = st.columns([1, 3, 1])
 #     st.image("logo.jpeg", width=200, output_format="PNG")
 
 with logo1:
-    st.image("logo_ccr_rcmi.png")
+    st.image("logo_ccr_rcmi.png", use_column_width=True)
 
 with title:
     # Application's Main Title (CENTER)
@@ -147,7 +147,7 @@ with title:
     # st.subheader("**Kidney Disease Lab Test / Social Determinants of Health (SDoH) - Puerto Rico**", anchor=False)
     
 with logo2:
-    st.image("logo_aim_ahead.png")
+    st.image("logo_aim_ahead.png", use_column_width=True)
 
 
 
