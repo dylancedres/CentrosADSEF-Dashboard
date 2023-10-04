@@ -116,8 +116,10 @@ sdoh = load_data()      # SDOHs and Labs Data
 
 
 ### Dashboard Main Title ###
-logo1, title, logo2 = st.columns([0.15, 0.10, 0.75])
+logo1, title, logo2 = st.columns([1, 3, 1])
+# logo1, title, logo2 = st.columns([0.15, 0.10, 0.75])
 # logo, buff, title = st.columns([0.15, 0.10, 0.75])
+
 # logo, logo_buff = st.columns([0.25, 0.75])
 # title_buff, title = st.columns([0.34, 0.66])
 # title_buff, title2 = st.columns([0.28, 0.72])
@@ -134,9 +136,6 @@ logo1, title, logo2 = st.columns([0.15, 0.10, 0.75])
 with logo1:
     st.image("logo_ccr_rcmi.png")
 
-with logo2:
-    st.image("logo_aim_ahead.png")
-
 with title:
     # Application's Main Title (CENTER)
     st.markdown("")
@@ -147,8 +146,11 @@ with title:
                 </p>""", unsafe_allow_html=True)
     # st.subheader("**Kidney Disease Lab Test / Social Determinants of Health (SDoH) - Puerto Rico**", anchor=False)
     
+with logo2:
+    st.image("logo_aim_ahead.png")
 
-    
+
+
 ### Dropdown Menus and SDoHs Descriptions ###
 col1, col2 = st.columns([0.20, 0.80], gap="medium")
 # col1, col2 = st.columns([0.175, 0.825], gap="medium")
