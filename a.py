@@ -135,16 +135,18 @@ logo1, title, logo2 = st.columns([0.10, 0.80, 0.10])
 
 with logo1:
     # st.image("logo_ccr_rcmi.png", use_column_width=True)
-    st.markdown("""
-        <img src="logo_ccr_rcmi.png" alt="CCR RCMI Logo" width="180" height="110" style="vertical-align:bottom; background-color:white">
-    """, unsafe_allow_html=True)
+    st.markdown("""<img src="logo_ccr_rcmi.png" alt="CCR RCMI Logo"
+                    width="180px" height="110px"
+                    style="vertical-align:bottom; background-color:white; 
+                    font-size:20px; color:black;">
+                """, unsafe_allow_html=True)
 
 with title:
     # Application's Main Title (CENTER)
     st.markdown("<br><br>", unsafe_allow_html=True)
     st.markdown("""<p style='text-align:center; font-weight:bold; font-size:30px'>
-                    Kidney Disease Lab Test / Social Determinants of Health (SDoH) - Puerto Rico
-                </p>""", unsafe_allow_html=True)
+                    Kidney Disease Lab Test / Social Determinants of Health (SDoH) - Puerto Rico</p>
+                """, unsafe_allow_html=True)
     # st.subheader("**Kidney Disease Lab Test / Social Determinants of Health (SDoH) - Puerto Rico**", anchor=False)
     
 with logo2:
