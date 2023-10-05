@@ -135,7 +135,7 @@ logo1, title, logo2 = st.columns([0.10, 0.80, 0.10])
 
 with logo1:
     # st.image("logo_ccr_rcmi.png", use_column_width=True)
-    st.markdown("""<img src="/main/logo_ccr_rcmi.png" alt="CCR RCMI Logo"
+    st.markdown("""<img src="https://raw.githubusercontent.com/dylancedres/SDOH-Dashboard/main/logo_ccr_rcmi.png" alt="CCR RCMI Logo"
                     width="180px" height="110px"
                     style="vertical-align:bottom; background-color:white; 
                     font-size:20px; color:black;">
