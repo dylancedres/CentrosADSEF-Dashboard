@@ -116,7 +116,7 @@ sdoh = load_data()      # SDOHs and Labs Data
 
 
 ### Dashboard Main Title ###
-logo1, title, logo2 = st.columns([0.15, 0.70, 0.15])
+logo1, title, logo2 = st.columns([0.11, 0.78, 0.11])
 # logo1, title, logo2 = st.columns([0.15, 0.10, 0.75])
 # logo, buff, title = st.columns([0.15, 0.10, 0.75])
 
