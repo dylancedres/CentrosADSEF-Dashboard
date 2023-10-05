@@ -458,7 +458,7 @@ footbuff1, footnote, footbuff2 = st.columns([0.10, 0.80, 0.10], gap="small")
 #             </p>""", unsafe_allow_html=True)
 
 with footnote:
-    st.caption("""<p style="text-align:center;">
+    st.caption("""<p style="text-align:justify;">
                    SDoHs were obtained from Agency for Healthcare Research and Quality (AHRQ) database (https://www.ahrq.gov/).
                    Kidney-related lab test results were obtained as part of the pilot project supported by the Office of the Director,
                    National Institutes of Health Common Fund under award number 1OT2OD032581-01
