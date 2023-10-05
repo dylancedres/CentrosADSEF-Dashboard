@@ -458,7 +458,7 @@ footbuff1, footnote, footbuff2 = st.columns([0.025, 0.90, 0.025], gap="small")
 #             </p>""", unsafe_allow_html=True)
 
 with footnote:
-    st.caption("""<p style="text-align:center;">
+    st.caption("""<p style="text-align:justify;">
                    SDoHs were obtained from Agency for Healthcare Research and Quality (AHRQ) database (
                    <a href="https://www.ahrq.gov/" target="_blank">https://www.ahrq.gov/</a>
                    ).
