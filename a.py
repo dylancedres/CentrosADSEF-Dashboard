@@ -134,7 +134,10 @@ logo1, title, logo2 = st.columns([0.10, 0.80, 0.10])
 #     st.image("logo.jpeg", width=200, output_format="PNG")
 
 with logo1:
-    st.image("logo_ccr_rcmi.png", use_column_width=True)
+    # st.image("logo_ccr_rcmi.png", use_column_width=True)
+    st.markdown("""
+        <img src="logo_ccr_rcmi.png" alt="CCR RCMI Logo" width="180" height="110" style="vertical-align:bottom" "background-color:white">
+    """, unsafe_allow_html=True)
 
 with title:
     # Application's Main Title (CENTER)
