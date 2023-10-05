@@ -459,7 +459,9 @@ footbuff1, footnote, footbuff2 = st.columns([0.025, 0.90, 0.025], gap="small")
 
 with footnote:
     st.caption("""<p style="text-align:center;">
-                   SDoHs were obtained from Agency for Healthcare Research and Quality (AHRQ) database (<a href="https://www.ahrq.gov/" target="_blank"/a>).
+                   SDoHs were obtained from Agency for Healthcare Research and Quality (AHRQ) database (
+                   <a href="https://www.ahrq.gov/" target="_blank">https://www.ahrq.gov/</a>
+                   ).
                    Kidney-related lab test results were obtained as part of the pilot project supported by the Office of the Director,
                    National Institutes of Health Common Fund under award number 1OT2OD032581-01
                    (Artificial Intelligence/Machine Learning Consortium to Advance Health Equity and Researcher Diversity (AIM-AHEAD)).
