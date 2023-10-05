@@ -116,7 +116,7 @@ sdoh = load_data()      # SDOHs and Labs Data
 
 
 ### Dashboard Main Title ###
-logo1, title, logo2 = st.columns([0.10, 0.80, 0.10])
+logo1, title, logo2 = st.columns([0.15, 0.70, 0.15])
 # logo1, title, logo2 = st.columns([0.15, 0.10, 0.75])
 # logo, buff, title = st.columns([0.15, 0.10, 0.75])
 
@@ -154,7 +154,7 @@ with logo2:
     st.markdown("""<a href="https://www.aim-ahead.net/" hreflang="en" target="blank">
                     <img style="vertical-align:bottom; background-color:white; font-size:16px; color:black;"
                     src=https://raw.githubusercontent.com/dylancedres/SDOH-Dashboard/main/logo_aim_ahead.png 
-                    alt="AIM AHEAD Logo" width="180px" height="120px">
+                    alt="AIM AHEAD Logo" width="170px" height="120px">
                 </a>""", unsafe_allow_html=True)
 
 
