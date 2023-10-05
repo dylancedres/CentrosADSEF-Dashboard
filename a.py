@@ -135,10 +135,11 @@ logo1, title, logo2 = st.columns([0.10, 0.80, 0.10])
 
 with logo1:
     # st.image("logo_ccr_rcmi.png", use_column_width=True)
-    st.markdown("""<img style="vertical-align:bottom; background-color:white; font-size:16px; color:black;"
-                    src="https://raw.githubusercontent.com/dylancedres/SDOH-Dashboard/main/logo_ccr_rcmi.png" 
-                    alt="CCR RCMI Logo" width="180px" height="110px">
-                """, unsafe_allow_html=True)
+    st.markdown("""<a href="https://rcmi.rcm.upr.edu/" hreflang="en" target="_blank">
+                      <img style="vertical-align:bottom; background-color:white; font-size:16px; color:black;"
+                      src="https://raw.githubusercontent.com/dylancedres/SDOH-Dashboard/main/logo_ccr_rcmi.png" 
+                      alt="CCR RCMI Logo" width="180px" height="110px">
+                </a>""", unsafe_allow_html=True)
 
 with title:
     # Application's Main Title (CENTER)
@@ -150,10 +151,11 @@ with title:
     
 with logo2:
     # st.image("logo_aim_ahead.png", use_column_width=True)
-    st.markdown("""<img style="vertical-align:bottom; background-color:white; font-size:16px; color:black;"
+    st.markdown("""<a href="https://rcmi.rcm.upr.edu/" hreflang="en" target="blank">
+                    <img style="vertical-align:bottom; background-color:white; font-size:16px; color:black;"
                     src=https://raw.githubusercontent.com/dylancedres/SDOH-Dashboard/main/logo_aim_ahead.png 
                     alt="AIM AHEAD Logo" width="180px" height="140px">
-                """, unsafe_allow_html=True)
+                </a>""", unsafe_allow_html=True)
 
 
 # Hide Images View Fullscreen
@@ -445,7 +447,7 @@ st.markdown(body="")
 
 
 # Resources Information Paragraph
-footbuff1, footnote, footbuff2 = st.columns([0.025, 0.90, 0.025], gap="small")
+footbuff1, footnote, footbuff2 = st.columns([0.025, 0.95, 0.025], gap="small")
 
 # st.markdown("""<p style="text-align:center; background-color:white; font-size:12px; color:black">
 #                 SDoHs were obtained from Agency for Healthcare Research and Quality (AHRQ) database (https://www.ahrq.gov/).<br><br>
@@ -458,21 +460,21 @@ footbuff1, footnote, footbuff2 = st.columns([0.025, 0.90, 0.025], gap="small")
 #             </p>""", unsafe_allow_html=True)
 
 with footnote:
-    st.caption("""<p style="text-align:justify;">
-                   SDoHs were obtained from Agency for Healthcare Research and Quality (AHRQ) database (
+    st.caption("""<p style="text-align:center;">
+                   SDoHs were obtained from the Agency for Healthcare Research and Quality (AHRQ) database (
                    <a href="https://www.ahrq.gov/" target="_blank">https://www.ahrq.gov/</a>
                    ).
-                   Kidney-related lab test results were obtained as part of the pilot project supported by the Office of the Director,
-                   National Institutes of Health Common Fund under award number 1OT2OD032581-01
+                   Kidney-related laboratory test results were obtained as part of the pilot project supported by the Office of the Director,
+                   National Institutes of Health Common Fund, under award number 1OT2OD032581-01
                    (Artificial Intelligence/Machine Learning Consortium to Advance Health Equity and Researcher Diversity (AIM-AHEAD)).
                    It was also supported by the Center for Collaborative Research in Health Disparities (CCRHD),
                    RCMI grant U54 MD007600 (National Institute on Minority Health and Health Disparities) from the National Institutes of Health.
                    The work is solely the authors' responsibility and does not necessarily represent the official view of the National Institutes of Health.
                </p>""", unsafe_allow_html=True)
 
-st.caption("""SDoHs were obtained from Agency for Healthcare Research and Quality (AHRQ) database (https://www.ahrq.gov/).
-              Kidney-related lab test results were obtained as part of the pilot project supported by the Office of the Director,
-              National Institutes of Health Common Fund under award number 1OT2OD032581-01
+st.caption("""SDoHs were obtained from the Agency for Healthcare Research and Quality (AHRQ) database (https://www.ahrq.gov/).
+              Kidney-related laboratory test results were obtained as part of the pilot project supported by the Office of the Director,
+              National Institutes of Health Common Fund, under award number 1OT2OD032581-01
               (Artificial Intelligence/Machine Learning Consortium to Advance Health Equity and Researcher Diversity (AIM-AHEAD)).
               It was also supported by the Center for Collaborative Research in Health Disparities (CCRHD),
               RCMI grant U54 MD007600 (National Institute on Minority Health and Health Disparities) from the National Institutes of Health.
