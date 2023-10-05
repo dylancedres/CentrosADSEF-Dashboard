@@ -135,22 +135,32 @@ logo1, title, logo2 = st.columns([0.10, 0.80, 0.10])
 
 with logo1:
     # st.image("logo_ccr_rcmi.png", use_column_width=True)
-    st.markdown("""<img src="https://raw.githubusercontent.com/dylancedres/SDOH-Dashboard/main/logo_ccr_rcmi.png" alt="CCR RCMI Logo"
-                    width="180px" height="110px"
-                    style="vertical-align:bottom; background-color:white; 
-                    font-size:20px; color:black;">
+    st.markdown("""<img style="vertical-align:bottom; background-color:white; font-size:16px; color:black;"
+                    src="https://raw.githubusercontent.com/dylancedres/SDOH-Dashboard/main/logo_ccr_rcmi.png" 
+                    alt="CCR RCMI Logo" width="180px" height="110px">
                 """, unsafe_allow_html=True)
 
 with title:
     # Application's Main Title (CENTER)
     st.markdown("<br><br>", unsafe_allow_html=True)
-    st.markdown("""<p style='text-align:center; font-weight:bold; font-size:30px'>
+    st.markdown("""<p style="text-align:center; font-weight:bold; font-size:30px">
                     Kidney Disease Lab Test / Social Determinants of Health (SDoH) - Puerto Rico</p>
                 """, unsafe_allow_html=True)
     # st.subheader("**Kidney Disease Lab Test / Social Determinants of Health (SDoH) - Puerto Rico**", anchor=False)
     
 with logo2:
-    st.image("logo_aim_ahead.png", use_column_width=True)
+    # st.image("logo_aim_ahead.png", use_column_width=True)
+    st.markdown("""<img style="vertical-align:bottom; background-color:white; font-size:16px; color:black;"
+                    src=https://raw.githubusercontent.com/dylancedres/SDOH-Dashboard/main/logo_aim_ahead.png 
+                    alt="AIM AHEAD Logo" width="180px" height="142px">
+                """, unsafe_allow_html=True)
+
+
+# Hide Images View Fullscreen
+st.markdown("""<style>
+                button[title="View fullscreen"]{
+                visibility: hidden;}
+            </style>""", unsafe_allow_html=True)
 
 
 ### Dropdown Menus and SDoHs Descriptions ###
@@ -435,7 +445,7 @@ st.markdown(body="")
 
 
 # Resources Information Paragraph
-st.markdown("""<p style='text-align:center;'>
+st.markdown("""<p style="text-align:center; background-color:white; font-size:10px; color:black">
                 SDoHs were obtained from Agency for Healthcare Research and Quality (AHRQ) database (https://www.ahrq.gov/).<br><br>
                 Kidney-related lab test results were obtained as part of the pilot project supported by the Office of the Director,<br>
                 National Institutes of Health Common Fund under award number 1OT2OD032581-01<br>
