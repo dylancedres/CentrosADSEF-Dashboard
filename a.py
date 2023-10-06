@@ -116,7 +116,7 @@ sdoh = load_data()      # SDOHs and Labs Data
 
 
 st.markdown("""<style>
-                  div:is([data-testid=stHorizontalBlock]) [gap=1rem] {
+                  div:is([data-testid=stHorizontalBlock]) [gap="1rem"] {
                     gap: 0rem;
                   }
             </style>""", unsafe_allow_html=True)
