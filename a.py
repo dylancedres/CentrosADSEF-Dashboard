@@ -116,7 +116,7 @@ sdoh = load_data()      # SDOHs and Labs Data
 
 
 st.markdown("""<style>
-                  [data-testid=stHorizontalBlock]:nth-of-type(6) {
+                  [data-testid=stHorizontalBlock]:nth-of-type(7) {
                     gap: 0rem;
                   }
             </style>""", unsafe_allow_html=True)
