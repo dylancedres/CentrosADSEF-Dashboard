@@ -124,7 +124,7 @@ st.markdown("""<style>
 
 
 ### Dashboard Main Title ###
-logo1, title, logo2 = st.columns([0.13, 0.74, 0.13])
+logo1, title, logo2 = st.columns([0.09, 0.82, 0.09])
 # logo1, title, logo2 = st.columns([0.15, 0.10, 0.75])
 # logo, buff, title = st.columns([0.15, 0.10, 0.75])
 
