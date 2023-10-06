@@ -473,7 +473,7 @@ with footbuff1:
                </p>""", unsafe_allow_html=True)
 
 with footnote:
-    st.caption("""<p style="text-align:justify;">
+    st.caption("""<p style="text-align:justify; font-size:12px">
                    SDoHs were obtained from the Agency for Healthcare Research and Quality database
                    (<a href="https://www.ahrq.gov/sdoh/data-analytics/sdoh-data.html" target="_blank">AHRQ</a>).
                    Kidney-related laboratory test results were obtained as part of the pilot project supported by the Office of the Director,
