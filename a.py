@@ -151,7 +151,7 @@ with logo1:
 
 with title:
     # Application's Main Title (CENTER)
-    st.markdown("""<p style="text-align:center; font-weight:bold; font-size:32px">
+    st.markdown("""<p style="text-align:center; font-weight:bold; font-size:36px">
                     <br>Kidney Disease Lab Test / Social Determinants of Health (SDoH) - Puerto Rico</p>
                 """, unsafe_allow_html=True)
     # st.subheader("**Kidney Disease Lab Test / Social Determinants of Health (SDoH) - Puerto Rico**", anchor=False)
