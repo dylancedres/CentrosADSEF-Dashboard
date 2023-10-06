@@ -116,8 +116,8 @@ sdoh = load_data()      # SDOHs and Labs Data
 
 
 st.markdown("""<style>
-                  div:is([data-testid=stHorizontalBlock]).css-ocqkz7 {
-                    gap: 0rem;
+                  div:is([data-testid=stHorizontalBlock]) {
+                    gap: 0.3rem;
                   }
             </style>""", unsafe_allow_html=True)
 
@@ -454,7 +454,7 @@ st.markdown(body="")
 
 
 # Resources Information Paragraph
-footbuff1, footnote, footbuff2 = st.columns([0.03, 0.94, 0.03])
+footbuff1, footnote, footbuff2 = st.columns([0.01, 0.98, 0.01])
 
 # st.markdown("""<p style="text-align:center; background-color:white; font-size:12px; color:black">
 #                 SDoHs were obtained from Agency for Healthcare Research and Quality (AHRQ) database (https://www.ahrq.gov/).<br><br>
