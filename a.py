@@ -447,7 +447,7 @@ st.markdown(body="")
 
 
 # Resources Information Paragraph
-footbuff1, footnote, footbuff2 = st.columns([0.001, 0.998, 0.001], gap="small")
+footbuff1, footnote, footbuff2 = st.columns([0.002, 0.998, 0.002])
 
 # st.markdown("""<p style="text-align:center; background-color:white; font-size:12px; color:black">
 #                 SDoHs were obtained from Agency for Healthcare Research and Quality (AHRQ) database (https://www.ahrq.gov/).<br><br>
