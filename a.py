@@ -467,6 +467,7 @@ st.markdown("""<style>
 
 with footbuff1:
     st.caption("""<p style="text-align:left;">
+                   Hello...
                </p>""", unsafe_allow_html=True)
 
 with footnote:
@@ -488,6 +489,7 @@ with footnote:
 
 with footbuff2:
     st.caption("""<p style="text-align:right;">
+                   Hello...
                </p>""", unsafe_allow_html=True)
 
 
