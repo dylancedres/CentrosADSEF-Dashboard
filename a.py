@@ -460,7 +460,9 @@ footbuff1, footnote, footbuff2 = st.columns([0.002, 0.998, 0.002])
 #             </p>""", unsafe_allow_html=True)
 
 with footbuff1:
-    st.markdown("&nbsp;", unsafe_allow_html=True)
+    st.caption("""<p style="text-align:justify;">
+                   Hello there...
+               </p>""", unsafe_allow_html=True)
 
 with footnote:
     st.caption("""<p style="text-align:justify;">
@@ -488,7 +490,9 @@ with footnote:
 #               The work is solely the authors' responsibility and does not necessarily represent the official view of the National Institutes of Health.""")
 
 with footbuff2:
-    st.markdown("")
+    st.caption("""<p style="text-align:justify;">
+                   Hello there...
+               </p>""", unsafe_allow_html=True)
 
 
 # Removes "Made with Streamlit"
