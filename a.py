@@ -179,7 +179,7 @@ col1, col2 = st.columns([0.20, 0.80])
 
 with col1:
     # st.markdown(body="##### Select the Kidney lab test")
-    st.markdown("""<p style="text-align:left; font-weight:bold; font-size:18px">
+    st.markdown("""<p style="text-align:left; font-weight:bold; font-size:22px">
                    <br><br>Select the Kidney lab test
                 </p>""", unsafe_allow_html=True)
     
@@ -194,7 +194,7 @@ with col1:
 
     # SDOHs Menu
     # st.markdown(body="##### Select the SDoH")
-    st.markdown("""<p style="text-align:left; font-weight:bold; font-size:18px">
+    st.markdown("""<p style="text-align:left; font-weight:bold; font-size:22px">
                     <br><br><br><br>Select the SDoH
                 </p>""", unsafe_allow_html=True)
     
