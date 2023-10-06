@@ -459,6 +459,9 @@ footbuff1, footnote, footbuff2 = st.columns([0.002, 0.998, 0.002])
 #                 The work is solely the authors' responsibility and does not necessarily represent the official view of the National Institutes of Health.
 #             </p>""", unsafe_allow_html=True)
 
+with footbuff1:
+    st.markdown("")
+
 with footnote:
     st.caption("""<p style="text-align:justify;">
                    SDoHs were obtained from the Agency for Healthcare Research and Quality database
@@ -483,7 +486,11 @@ with footnote:
 #               It was also supported by the Center for Collaborative Research in Health Disparities (CCRHD),
 #               RCMI grant U54 MD007600 (National Institute on Minority Health and Health Disparities) from the National Institutes of Health.
 #               The work is solely the authors' responsibility and does not necessarily represent the official view of the National Institutes of Health.""")
-            
+
+with footbuff2:
+    st.markdown("")
+
+
 # Removes "Made with Streamlit"
 hide_style = """<style>
                  footer {visibility: hidden;}
