@@ -146,12 +146,12 @@ with logo1:
     st.markdown("""<a href="https://rcmi.rcm.upr.edu/" hreflang="en" target="_blank">
                       <img style="vertical-align:top; background-color:white; font-size:16px; color:black;"
                       src="https://raw.githubusercontent.com/dylancedres/SDOH-Dashboard/main/logo_ccr_rcmi.png" 
-                      alt="CCR RCMI Logo" width="182px" height="114px">
+                      alt="CCR RCMI Logo" width="176px" height="108px">
                 </a>""", unsafe_allow_html=True)
 
 with title:
     # Application's Main Title (CENTER)
-    st.markdown("""<p style="text-align:center; font-weight:bold; font-size:34px">
+    st.markdown("""<p style="text-align:center; font-weight:bold; font-size:32px">
                     <br>Kidney Disease Lab Test / Social Determinants of Health (SDoH) - Puerto Rico</p>
                 """, unsafe_allow_html=True)
     # st.subheader("**Kidney Disease Lab Test / Social Determinants of Health (SDoH) - Puerto Rico**", anchor=False)
@@ -161,7 +161,7 @@ with logo2:
     st.markdown("""<a href="https://www.aim-ahead.net/" hreflang="en" target="blank">
                     <img style="vertical-align:top; background-color:white; font-size:16px; color:black;"
                     src="https://www.aim-ahead.net/media/4swfpq0h/aim_ahead_600x474.png?width=180&height=142&mode=max"
-                    alt="AIM AHEAD Logo" width="170px" height="120px">
+                    alt="AIM AHEAD Logo" width="164px" height="114px">
                 </a>""", unsafe_allow_html=True)
 
 
