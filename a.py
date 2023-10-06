@@ -459,6 +459,13 @@ footbuff1, footnote, footbuff2 = st.columns([0.03, 0.94, 0.03])
 #                 The work is solely the authors' responsibility and does not necessarily represent the official view of the National Institutes of Health.
 #             </p>""", unsafe_allow_html=True)
 
+st.markdown("""<style>
+                  [data-testid=column]:nth-of-type(1)
+                  [data-testid=stHorizontalBlock] {
+                    gap: 0rem;
+                  }
+            </style>""", unsafe_allow_html=True)
+
 with footbuff1:
     st.caption("""<p style="text-align:left;">
                </p>""", unsafe_allow_html=True)
