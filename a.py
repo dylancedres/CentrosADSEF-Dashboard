@@ -144,7 +144,7 @@ logo1, title, logo2 = st.columns([0.16, 0.74, 0.10])
 with logo1:
     # st.image("logo_ccr_rcmi.png", use_column_width=True)
     st.markdown("""<a href="https://rcmi.rcm.upr.edu/" hreflang="en" target="_blank">
-                      <img style="vertical-align:bottom; background-color:white; font-size:16px; color:black;"
+                      <img style="vertical-align:top; background-color:white; font-size:16px; color:black;"
                       src="https://raw.githubusercontent.com/dylancedres/SDOH-Dashboard/main/logo_ccr_rcmi.png" 
                       alt="CCR RCMI Logo" width="180px" height="120px">
                 </a>""", unsafe_allow_html=True)
@@ -159,7 +159,7 @@ with title:
 with logo2:
     # st.image("logo_aim_ahead.png", use_column_width=True)
     st.markdown("""<a href="https://www.aim-ahead.net/" hreflang="en" target="blank">
-                    <img style="vertical-align:bottom; background-color:white; font-size:16px; color:black;"
+                    <img style="vertical-align:top; background-color:white; font-size:16px; color:black;"
                     src=https://raw.githubusercontent.com/dylancedres/SDOH-Dashboard/main/logo_aim_ahead.png 
                     alt="AIM AHEAD Logo" width="170px" height="120px">
                 </a>""", unsafe_allow_html=True)
