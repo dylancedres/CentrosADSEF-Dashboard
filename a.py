@@ -116,7 +116,7 @@ sdoh = load_data()      # SDOHs and Labs Data
 
 
 st.markdown("""<style>
-                  div:is([data-testid=stHorizontalBlock]) :is(nth-of-type(3)) {
+                  div:is([data-testid=stHorizontalBlock]) :is(last-of-type) {
                     gap: 0rem;
                   }
             </style>""", unsafe_allow_html=True)
