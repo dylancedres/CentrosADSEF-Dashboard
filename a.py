@@ -160,7 +160,7 @@ with logo2:
     # st.image("logo_aim_ahead.png", use_column_width=True)
     st.markdown("""<a href="https://www.aim-ahead.net/" hreflang="en" target="blank">
                     <img style="vertical-align:top; background-color:white; font-size:16px; color:black;"
-                    src=https://raw.githubusercontent.com/dylancedres/SDOH-Dashboard/main/logo_aim_ahead.png 
+                    src="https://raw.githubusercontent.com/dylancedres/SDOH-Dashboard/main/logo_aim_ahead.png"
                     alt="AIM AHEAD Logo" width="170px" height="120px">
                 </a>""", unsafe_allow_html=True)
 
