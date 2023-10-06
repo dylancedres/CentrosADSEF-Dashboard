@@ -172,17 +172,16 @@ st.markdown("""<style>
             </style>""", unsafe_allow_html=True)
 
 
-### Dropdown Menus and SDoHs Descriptions ###
-col1, col2 = st.columns([0.20, 0.80], gap="medium")
-# col1, col2 = st.columns([0.175, 0.825], gap="medium")
-
-
 st.markdown(body="<br><br>", unsafe_allow_html=True)
-# st.divider()
+
+### Dropdown Menus and SDoHs Descriptions ###
+col1, col2 = st.columns([0.20, 0.80])
+
 with col1:
-    st.markdown(body="")
-    st.markdown(body="")
-    st.markdown(body="##### Select the Kidney lab test")
+    # st.markdown(body="##### Select the Kidney lab test")
+    st.markdown("""<p style="text-align:left; font-weight:bold; font-size:12px">
+                   <br><br>Select the Kidney lab test
+                </p>""", unsafe_allow_html=True)
     
     # Labs Menu
     lab_selection = st.selectbox(key="current_lab",
@@ -192,13 +191,13 @@ with col1:
                                  index=0,
                                  format_func=lambda y: dict_labLabels[y])
                                  # format_func=lambda y: str(lab_options.index(y)+1) + ". " + dict_labLabels[y])
-    st.markdown(body="")
-    st.markdown(body="")
-    st.markdown(body="")
-    st.markdown(body="")
-    
+
     # SDOHs Menu
-    st.markdown(body="##### Select the SDOH")
+    # st.markdown(body="##### Select the SDoH")
+    st.markdown("""<p style="text-align:left; font-weight:bold; font-size:12px">
+                    <br><br><br><br>Select the SDoH
+                </p>""", unsafe_allow_html=True)
+    
     sdoh_selection = st.selectbox(key="current_sdoh",
                                   label="**Select the SDOH**", 
                                   label_visibility="collapsed",
