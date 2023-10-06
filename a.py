@@ -460,7 +460,7 @@ footbuff1, footnote, footbuff2 = st.columns([0.002, 0.998, 0.002])
 #             </p>""", unsafe_allow_html=True)
 
 with footbuff1:
-    st.markdown("")
+    st.markdown("&nbsp;", unsafe_allow_html=True)
 
 with footnote:
     st.caption("""<p style="text-align:justify;">
