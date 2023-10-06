@@ -470,7 +470,6 @@ footbuff1, footnote, footbuff2 = st.columns([0.03, 0.94, 0.03])
 
 with footbuff1:
     st.caption("""<p style="text-align:left;">
-                   Hello...
                </p>""", unsafe_allow_html=True)
 
 with footnote:
@@ -492,7 +491,6 @@ with footnote:
 
 with footbuff2:
     st.caption("""<p style="text-align:right;">
-                   Hello...
                </p>""", unsafe_allow_html=True)
 
 
