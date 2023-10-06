@@ -460,8 +460,7 @@ footbuff1, footnote, footbuff2 = st.columns([0.03, 0.94, 0.03])
 #             </p>""", unsafe_allow_html=True)
 
 st.markdown("""<style>
-                  [data-testid=column]:nth-of-type(1)
-                  [data-testid=stHorizontalBlock] {
+                  [data-testid=stHorizontalBlock]:nth-of-type(3) {
                     gap: 0rem;
                   }
             </style>""", unsafe_allow_html=True)
