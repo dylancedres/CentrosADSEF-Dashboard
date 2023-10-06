@@ -115,6 +115,13 @@ counties = load_json()  # Puerto Rico's Map Information
 sdoh = load_data()      # SDOHs and Labs Data
 
 
+st.markdown("""<style>
+                  [data-testid=stHorizontalBlock]:nth-child(odd){
+                    gap: 0rem;
+                  }
+            </style>""", unsafe_allow_html=True)
+
+
 ### Dashboard Main Title ###
 logo1, title, logo2 = st.columns([0.11, 0.78, 0.11])
 # logo1, title, logo2 = st.columns([0.15, 0.10, 0.75])
@@ -459,11 +466,7 @@ footbuff1, footnote, footbuff2 = st.columns([0.03, 0.94, 0.03])
 #                 The work is solely the authors' responsibility and does not necessarily represent the official view of the National Institutes of Health.
 #             </p>""", unsafe_allow_html=True)
 
-st.markdown("""<style>
-                  [data-testid=stHorizontalBlock]:nth-child(1){
-                    gap: 0rem;
-                  }
-            </style>""", unsafe_allow_html=True)
+
 
 with footbuff1:
     st.caption("""<p style="text-align:left;">
