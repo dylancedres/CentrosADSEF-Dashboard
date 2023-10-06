@@ -447,7 +447,7 @@ st.markdown(body="")
 
 
 # Resources Information Paragraph
-footbuff1, footnote, footbuff2 = st.columns([0.002, 0.998, 0.002])
+footbuff1, footnote, footbuff2 = st.columns([0.05, 0.90, 0.05])
 
 # st.markdown("""<p style="text-align:center; background-color:white; font-size:12px; color:black">
 #                 SDoHs were obtained from Agency for Healthcare Research and Quality (AHRQ) database (https://www.ahrq.gov/).<br><br>
@@ -480,14 +480,6 @@ with footnote:
                    (<a href="https://www.nih.gov/" target="_blank">NIH</a>).
                    The work is solely the authors' responsibility and does not necessarily represent the official view of the NIH.
                </p>""", unsafe_allow_html=True)
-
-# st.caption("""SDoHs were obtained from the Agency for Healthcare Research and Quality (AHRQ) database (https://www.ahrq.gov/).
-#               Kidney-related laboratory test results were obtained as part of the pilot project supported by the Office of the Director,
-#               National Institutes of Health Common Fund, under award number 1OT2OD032581-01
-#               (Artificial Intelligence/Machine Learning Consortium to Advance Health Equity and Researcher Diversity (AIM-AHEAD)).
-#               It was also supported by the Center for Collaborative Research in Health Disparities (CCRHD),
-#               RCMI grant U54 MD007600 (National Institute on Minority Health and Health Disparities) from the National Institutes of Health.
-#               The work is solely the authors' responsibility and does not necessarily represent the official view of the National Institutes of Health.""")
 
 with footbuff2:
     st.caption("""<p style="text-align:justify;">
