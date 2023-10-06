@@ -175,7 +175,7 @@ st.markdown("""<style>
 st.markdown(body="<br><br>", unsafe_allow_html=True)
 
 ### Dropdown Menus and SDoHs Descriptions ###
-col1, col2 = st.columns([0.20, 0.80], gap="medium")
+col1, col2 = st.columns([0.20, 0.80])
 
 with col1:
     # st.markdown(body="##### Select the Kidney lab test")
