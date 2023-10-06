@@ -116,7 +116,7 @@ sdoh = load_data()      # SDOHs and Labs Data
 
 
 st.markdown("""<style>
-                  .e1f1d6gn3:nth-child(3) {
+                  .css-ocqkz7 e1f1d6gn3:nth-child(2) {
                     gap: 0rem;
                   }
             </style>""", unsafe_allow_html=True)
