@@ -124,7 +124,7 @@ st.markdown("""<style>
 
 
 ### Dashboard Main Title ###
-logo1, title, logo2 = st.columns([0.14, 0.76, 0.10])
+logo1, title, logo2 = st.columns([0.13, 0.77, 0.10])
 # logo1, title, logo2 = st.columns([0.15, 0.10, 0.75])
 # logo, buff, title = st.columns([0.15, 0.10, 0.75])
 
@@ -146,7 +146,7 @@ with logo1:
     st.markdown("""<a href="https://rcmi.rcm.upr.edu/" hreflang="en" target="_blank">
                       <img style="vertical-align:top; background-color:white; font-size:16px; color:black;"
                       src="https://raw.githubusercontent.com/dylancedres/SDOH-Dashboard/main/logo_ccr_rcmi.png" 
-                      alt="CCR RCMI Logo" width="186px" height="116px">
+                      alt="CCR RCMI Logo" width="182px" height="114px">
                 </a>""", unsafe_allow_html=True)
 
 with title:
