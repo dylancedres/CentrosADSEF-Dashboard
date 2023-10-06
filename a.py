@@ -207,13 +207,13 @@ with col1:
                                   # format_func=lambda x: str(sdoh_options.index(x)+1) + ". " + dict_sdohLabels[x])
     
     st.markdown(body="")
-    sdoh_description = st.markdown(body="\"\"\""+dict_sdohDescriptions[sdoh_selection],
+    sdoh_description = st.markdown(body=dict_sdohDescriptions[sdoh_selection],
                                    help=dict_sdohLabels[sdoh_selection])
 
 
 
 # Dictionary for ticks information
-arange = np.arange(start=0.0, stop=1.01, step=0.05882352941176471)
+arange = np.arange(start=0.0, stop=1.01, step=0.0588)
 sdoh_describe = sdoh[sdoh_selection].describe(percentiles=arange)
 sdoh_describe.pop("50%")
 percentiles_vals = sdoh_describe[7:-1].values
