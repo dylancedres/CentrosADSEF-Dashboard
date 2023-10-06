@@ -146,7 +146,7 @@ with logo1:
     st.markdown("""<a href="https://rcmi.rcm.upr.edu/" hreflang="en" target="_blank">
                       <img style="vertical-align:top; background-color:white; font-size:16px; color:black;"
                       src="https://raw.githubusercontent.com/dylancedres/SDOH-Dashboard/main/logo_ccr_rcmi.png" 
-                      alt="CCR RCMI Logo" width="184px" height="118px">
+                      alt="CCR RCMI Logo" width="186px" height="116px">
                 </a>""", unsafe_allow_html=True)
 
 with title:
