@@ -447,7 +447,7 @@ st.markdown(body="")
 
 
 # Resources Information Paragraph
-footbuff1, footnote, footbuff2 = st.columns([0.05, 0.90, 0.05], gap="large")
+footbuff1, footnote, footbuff2 = st.columns([0.03, 0.94, 0.03], gap="large")
 
 # st.markdown("""<p style="text-align:center; background-color:white; font-size:12px; color:black">
 #                 SDoHs were obtained from Agency for Healthcare Research and Quality (AHRQ) database (https://www.ahrq.gov/).<br><br>
@@ -460,8 +460,7 @@ footbuff1, footnote, footbuff2 = st.columns([0.05, 0.90, 0.05], gap="large")
 #             </p>""", unsafe_allow_html=True)
 
 with footbuff1:
-    st.caption("""<p style="text-align:justify;">
-                   Hello...
+    st.caption("""<p style="text-align:left;">
                </p>""", unsafe_allow_html=True)
 
 with footnote:
@@ -482,8 +481,7 @@ with footnote:
                </p>""", unsafe_allow_html=True)
 
 with footbuff2:
-    st.caption("""<p style="text-align:justify;">
-                   Hello...
+    st.caption("""<p style="text-align:right;">
                </p>""", unsafe_allow_html=True)
 
 
