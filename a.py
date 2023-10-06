@@ -461,7 +461,7 @@ footbuff1, footnote, footbuff2 = st.columns([0.03, 0.94, 0.03])
 
 st.markdown("""<style>
                   [data-testid=stHorizontalBlock]:nth-child(1){
-                    color: green;
+                    gap: 0rem;
                   }
             </style>""", unsafe_allow_html=True)
 
