@@ -447,7 +447,7 @@ st.markdown(body="")
 
 
 # Resources Information Paragraph
-footbuff1, footnote, footbuff2 = st.columns([0.01, 0.98, 0.01], gap="small")
+footbuff1, footnote, footbuff2 = st.columns([0.001, 0.998, 0.001], gap="small")
 
 # st.markdown("""<p style="text-align:center; background-color:white; font-size:12px; color:black">
 #                 SDoHs were obtained from Agency for Healthcare Research and Quality (AHRQ) database (https://www.ahrq.gov/).<br><br>
@@ -461,15 +461,23 @@ footbuff1, footnote, footbuff2 = st.columns([0.01, 0.98, 0.01], gap="small")
 
 with footnote:
     st.caption("""<p style="text-align:justify;">
-                   SDoHs were obtained from the Agency for Healthcare Research and Quality (AHRQ) database (
-                   <a href="https://www.ahrq.gov/" target="_blank">https://www.ahrq.gov/</a>
+                   SDoHs were obtained from the Agency for Healthcare Research and Quality database (
+                   <a href="https://www.ahrq.gov/" target="_blank">AHRQ</a>
                    ).
                    Kidney-related laboratory test results were obtained as part of the pilot project supported by the Office of the Director,
                    National Institutes of Health Common Fund, under award number 1OT2OD032581-01
-                   (Artificial Intelligence/Machine Learning Consortium to Advance Health Equity and Researcher Diversity (AIM-AHEAD)).
-                   It was also supported by the Center for Collaborative Research in Health Disparities (CCRHD),
-                   RCMI grant U54 MD007600 (National Institute on Minority Health and Health Disparities) from the National Institutes of Health.
-                   The work is solely the authors' responsibility and does not necessarily represent the official view of the National Institutes of Health.
+                   (Artificial Intelligence/Machine Learning Consortium to Advance Health Equity and Researcher Diversity (
+                   <a href="https://www.aim-ahead.net/" target="_blank">AIM-AHEAD</a>
+                   )).
+                   It was also supported by the Center for Collaborative Research in Health Disparities (
+                   <a href="https://rcmi.rcm.upr.edu/" target="_blank">CCRHD</a>
+                   ),
+                   RCMI grant U54 MD007600 (National Institute on Minority Health and Health Disparities (
+                   <a href="https://www.nimhd.nih.gov/" target="_blank">NIMHD</a>
+                   )) from the National Institutes of Health (
+                   <a href="https://www.nih.gov/" target="_blank">NIH</a>
+                   ).
+                   The work is solely the authors' responsibility and does not necessarily represent the official view of the NIH.
                </p>""", unsafe_allow_html=True)
 
 st.caption("""SDoHs were obtained from the Agency for Healthcare Research and Quality (AHRQ) database (https://www.ahrq.gov/).
