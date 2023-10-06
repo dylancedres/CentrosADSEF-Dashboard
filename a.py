@@ -447,7 +447,7 @@ st.markdown(body="")
 
 
 # Resources Information Paragraph
-footbuff1, footnote, footbuff2 = st.columns([0.05, 0.90, 0.05])
+footbuff1, footnote, footbuff2 = st.columns([0.05, 0.90, 0.05], gap="large")
 
 # st.markdown("""<p style="text-align:center; background-color:white; font-size:12px; color:black">
 #                 SDoHs were obtained from Agency for Healthcare Research and Quality (AHRQ) database (https://www.ahrq.gov/).<br><br>
@@ -461,13 +461,13 @@ footbuff1, footnote, footbuff2 = st.columns([0.05, 0.90, 0.05])
 
 with footbuff1:
     st.caption("""<p style="text-align:justify;">
-                   Hello there...
+                   Hello...
                </p>""", unsafe_allow_html=True)
 
 with footnote:
     st.caption("""<p style="text-align:justify;">
                    SDoHs were obtained from the Agency for Healthcare Research and Quality database
-                   (<a href="https://www.ahrq.gov/" target="_blank">AHRQ</a>).
+                   (<a href="https://www.ahrq.gov/sdoh/data-analytics/sdoh-data.html" target="_blank">AHRQ</a>).
                    Kidney-related laboratory test results were obtained as part of the pilot project supported by the Office of the Director,
                    National Institutes of Health Common Fund, under award number 1OT2OD032581-01
                    (Artificial Intelligence/Machine Learning Consortium to Advance Health Equity and Researcher Diversity
@@ -483,7 +483,7 @@ with footnote:
 
 with footbuff2:
     st.caption("""<p style="text-align:justify;">
-                   Hello there...
+                   Hello...
                </p>""", unsafe_allow_html=True)
 
 
