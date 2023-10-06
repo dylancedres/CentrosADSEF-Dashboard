@@ -207,7 +207,7 @@ with col1:
                                   # format_func=lambda x: str(sdoh_options.index(x)+1) + ". " + dict_sdohLabels[x])
     
     st.markdown(body="")
-    sdoh_description = st.markdown(body=dict_sdohDescriptions[sdoh_selection],
+    sdoh_description = st.markdown(body="\"\"\""+dict_sdohDescriptions[sdoh_selection],
                                    help=dict_sdohLabels[sdoh_selection])
 
 
