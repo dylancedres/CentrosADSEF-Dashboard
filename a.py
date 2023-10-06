@@ -117,8 +117,8 @@ sdoh = load_data()      # SDOHs and Labs Data
 
 st.markdown("""<style>
                   div:is([data-testid=stHorizontalBlock]) [column-gap=1rem]{
-                    column-gap: 0.75rem;
-                    row-gap=0.75rem
+                    column-gap: 0.9rem;
+                    row-gap=0.9rem
                   }
             </style>""", unsafe_allow_html=True)
 
@@ -175,7 +175,7 @@ st.markdown("""<style>
 st.markdown(body="<br><br>", unsafe_allow_html=True)
 
 ### Dropdown Menus and SDoHs Descriptions ###
-col1, col2 = st.columns([0.20, 0.80])
+col1, col2 = st.columns([0.20, 0.80], gap="medium")
 
 with col1:
     # st.markdown(body="##### Select the Kidney lab test")
