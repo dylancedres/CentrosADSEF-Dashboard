@@ -469,11 +469,11 @@ footbuff1, footnote, footbuff2 = st.columns([0.01, 0.98, 0.01])
 
 
 with footbuff1:
-    st.caption("""<p style="text-align:left;">
+    st.caption("""<p style="text-align:left; font-size:14px">
                </p>""", unsafe_allow_html=True)
 
 with footnote:
-    st.caption("""<p style="text-align:justify; font-size:12px">
+    st.caption("""<p style="text-align:justify; font-size:14px">
                    SDoHs were obtained from the Agency for Healthcare Research and Quality database
                    (<a href="https://www.ahrq.gov/sdoh/data-analytics/sdoh-data.html" target="_blank">AHRQ</a>).
                    Kidney-related laboratory test results were obtained as part of the pilot project supported by the Office of the Director,
@@ -490,7 +490,7 @@ with footnote:
                </p>""", unsafe_allow_html=True)
 
 with footbuff2:
-    st.caption("""<p style="text-align:right;">
+    st.caption("""<p style="text-align:right; font-size:14px">
                </p>""", unsafe_allow_html=True)
 
 
