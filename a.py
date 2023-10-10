@@ -42,6 +42,7 @@ sdoh_options = ["ACS_PCT_HH_PUB_ASSIST",      # poverty
                 "ACS_PCT_LT_HS",              # education
                 "ACS_PCT_UNINSURED",          # insurance_coverage
                 "HIFLD_MIN_DIST_UC"]          # healthcare_access
+                # "ACS_PCT_DISABLE"]            # disabilities
                 # "ACS_PCT_GRANDP_NO_RESPS"]  # extended_family
     
 labels_for_counties = [
@@ -50,7 +51,8 @@ labels_for_counties = [
     "Percentage of People with Less Than High School Education (Ages 25 and over) ",  # education
     "Percentage of People without Health Insurance Coverage ",                        # insurance_coverage
     "Miles to Nearest Urgent Care "]                                                  # healthcare_access
-    # "Pct. Children Living with Grandparent, Not Responsible"]                       # extended_family
+    # "Percentage of People with a Disability "]                                        # disabilities
+    # "Pct. Children Living with Grandparent, Not Responsible "]                      # extended_family
     
 # Descriptions to display extra information to users
 descriptions_for_counties = [
@@ -59,10 +61,16 @@ descriptions_for_counties = [
     "Percentage of People With Less Than a High School Education (Ages 25 and over).",                                                # education
     "Percentage of People Without Health Insurance Coverage.",                                                                        # insurance_coverage
     "Distance in Miles to the Nearest Urgent Care Center (based on ZIP Codes)."]                                                      # healthcare_access
+    # "Percentage of People With a Disability."]                                                                                        # disabilities
     # "Percentage of Children living with their Grandparent, that is not responsible for them."]                                      # extended_family  
 
-sdoh_colors = ['color_ACS_PCT_HH_PUB_ASSIST', 'color_ACS_TOT_CIVIL_EMPLOY_POP', 'color_ACS_PCT_LT_HS',
-               'color_ACS_PCT_UNINSURED', 'color_HIFLD_MIN_DIST_UC', 'color_ACS_PCT_GRANDP_NO_RESPS']
+sdoh_colors = ["color_ACS_PCT_HH_PUB_ASSIST", 
+               "color_ACS_TOT_CIVIL_EMPLOY_POP", 
+               "color_ACS_PCT_LT_HS",
+               "color_ACS_PCT_UNINSURED", 
+               "color_HIFLD_MIN_DIST_UC"]
+               # "color_ACS_PCT_DISABLE"
+               # "color_ACS_PCT_GRANDP_NO_RESPS"]
 
 sdoh_tickvals=[3000000, 4000000, 5000000, 6000000, 7000000, 8000000, 9000000, 10000000, 
                11000000, 12000000, 13000000, 14000000, 15000000, 16000000, 17000000]
