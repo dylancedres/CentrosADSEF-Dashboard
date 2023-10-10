@@ -115,12 +115,12 @@ counties = load_json()  # Puerto Rico's Map Information
 sdoh = load_data()      # SDOHs and Labs Data
 
 
-st.markdown("""<style>
-                  div:is([data-testid=stHorizontalBlock]) [column-gap=1rem]{
-                    column-gap: 0.9rem;
-                    row-gap=0.9rem
-                  }
-            </style>""", unsafe_allow_html=True)
+# st.markdown("""<style>
+#                   div:is([data-testid=stHorizontalBlock]) [column-gap=1rem]{
+#                     column-gap: 0.9rem;
+#                     row-gap=0.9rem
+#                   }
+#             </style>""", unsafe_allow_html=True)
 
 
 ### Dashboard Main Title ###
