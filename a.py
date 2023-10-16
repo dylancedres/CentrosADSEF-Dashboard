@@ -64,13 +64,12 @@ descriptions_for_counties = [
     # "Percentage of People With a Disability."]                                                                                        # disabilities
     # "Percentage of Children living with their Grandparent, that is not responsible for them."]                                      # extended_family  
 
-sdoh_colors = ["color_ACS_PCT_HH_PUB_ASSIST", 
-               "color_ACS_TOT_CIVIL_EMPLOY_POP", 
-               "color_ACS_PCT_LT_HS",
-               "color_ACS_PCT_UNINSURED", 
-               "color_HIFLD_MIN_DIST_UC"]
-               # "color_ACS_PCT_DISABLE"
-               # "color_ACS_PCT_GRANDP_NO_RESPS"]
+# sdoh_colors = ["color_ACS_PCT_HH_PUB_ASSIST", 
+#                "color_ACS_TOT_CIVIL_EMPLOY_POP", 
+#                "color_ACS_PCT_LT_HS",
+#                "color_ACS_PCT_UNINSURED", 
+#                "color_HIFLD_MIN_DIST_UC",
+#                "color_ACS_PCT_DISABLE"]
 
 sdoh_tickvals=[3000000, 4000000, 5000000, 6000000, 7000000, 8000000, 9000000, 10000000, 
                11000000, 12000000, 13000000, 14000000, 15000000, 16000000, 17000000]
@@ -90,7 +89,7 @@ labels_for_dots = ["Average of Albumin Urine lab test ",
                    "Average of Creatinine Serum lab test ", 
                    "Average of Creatinine Urine lab test "]
 
-lab_colors = ["color_albu_urine", "color_bun", "color_crea_serum", "color_crea_urine"]
+# lab_colors = ["color_albu_urine", "color_bun", "color_crea_serum", "color_crea_urine"]
 
 lab_dticks = [5, 2, 0.1, 15]
 
