@@ -78,7 +78,7 @@ sdoh_tickvals=[3000000, 4000000, 5000000, 6000000, 7000000, 8000000, 9000000, 10
 
 dict_sdohLabels = dict(zip(sdoh_options, labels_for_counties))    
 dict_sdohDescriptions = dict(zip(sdoh_options, descriptions_for_counties))
-dict_sdohColors = dict(zip(sdoh_options, sdoh_colors))
+# dict_sdohColors = dict(zip(sdoh_options, sdoh_colors))
 
 
 
@@ -96,7 +96,7 @@ lab_dticks = [5, 2, 0.1, 15]
 
 
 dict_labLabels = dict(zip(lab_options, labels_for_dots))
-dict_labColors = dict(zip(lab_options, lab_colors))
+# dict_labColors = dict(zip(lab_options, lab_colors))
 dict_labsDticks = dict(zip(lab_options, lab_dticks))
 
 
@@ -311,7 +311,8 @@ mapp.update_layout(autosize=False,                                      # allows
 # Map's Traces Properties
 mapp.update_traces(visible=True,
                    name=dict_sdohLabels[sdoh_selection],                # new name of symbol
-                   z=sdoh[dict_sdohColors[sdoh_selection]],
+                   z=sdoh["color_"+sdoh_selection],
+                   # z=sdoh[dict_sdohColors[sdoh_selection]],
                    # z=sdoh[sdoh_selection],
                    # zauto=False,                                       # allows custom inferior/superior limits & midpoint
                    # zmin=sdoh[sdoh_selection].min(),
@@ -394,8 +395,9 @@ dots.update_traces(showlegend=False,                                      # allo
                    marker=dict(
                        size=9,                                            # size of dots, same as <size> in px.scatter_geo(...)
                        line=dict(width=1.25, color="#303030"),            # dots borders line thickness & color
-                       
-                       color=sdoh[dict_labColors[lab_selection]],         # determines color intensities
+
+                       color=sdoh["color_"+lab_selection]                 # determines color intensities
+                       # color=sdoh[dict_labColors[lab_selection]],
                        opacity=0.90,
                        cauto=False,                                       # allows custom inferior/superior limits & midpoint
                        cmin=sdoh[lab_selection].min(),
