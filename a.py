@@ -31,8 +31,7 @@ def load_json():
 # Data Frame Creation
 @st.cache_data
 def load_data():
-    sdoh_path = r"C:\Users\dcedr\Documents\csvs\sdoh_new.csv"
-    # sdoh_path = "sdoh.csv"
+    sdoh_path = "sdoh.csv"
     return pd.read_csv(sdoh_path, dtype={"COUNTYFIPS":str, "STATEFIPS":str}, low_memory=False)
     
 
