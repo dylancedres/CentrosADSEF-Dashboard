@@ -374,7 +374,7 @@ mapp.update_layout(autosize=False,                                      # allows
 # Map's Traces Properties
 mapp.update_traces(visible=True,
                    name=dict_sdohLabels[sdoh_selection],                # new name of symbol
-                   z=["rgba(223, 128, 255)"]*78,
+                   z=["rgba(223, 128, 255)"],
                    # z=sdoh["color_"+sdoh_selection],
                    # z=sdoh[dict_sdohColors[sdoh_selection]],
                    # z=sdoh[sdoh_selection],
