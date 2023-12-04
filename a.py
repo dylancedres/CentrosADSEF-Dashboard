@@ -456,6 +456,7 @@ dots.update_traces(showlegend=False,                                      # allo
                    
                    # selected_marker=dict(opacity=1, size=10),
                    marker=dict(
+                       symbol="diamond",                                  # shape type of marker
                        size=9,                                            # size of dots, same as <size> in px.scatter_geo(...)
                        line=dict(width=1.25, color="#303030"),            # dots borders line thickness & color
 
