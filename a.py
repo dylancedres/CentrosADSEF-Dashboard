@@ -459,7 +459,7 @@ dots.update_traces(showlegend=False,                                      # allo
                    marker=dict(
                        # symbol="star-triangle-down",                       # shape type of marker
                        # symbol="star-triangle-down",
-                       symbol = "diamond-tall+circle",
+                       symbol = "diamond-tall",
                        
                        size=9,                                            # size of dots, same as <size> in px.scatter_geo(...)
                        line=dict(width=1.25, color="#303030"),            # dots borders line thickness & color
