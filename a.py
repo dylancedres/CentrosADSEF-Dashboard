@@ -33,14 +33,16 @@ def load_json():
 # Data Frame Creation
 # @st.cache_data
 def load_data():
-    adsef_path = r"C:\Users\dcedr\Documents\dashboard_codes\adsef_centros\adsef.csv"
+    adsef_path = "adsef.csv"
+    # adsef_path = r"C:\Users\dcedr\Documents\dashboard_codes\adsef_centros\adsef.csv"
     return pd.read_csv(adsef_path, 
                        dtype={"Region Zipcode":str, "Fipcode":str, "Zipcode":str, "Expiracion de Licencia":str}, 
                        low_memory=False)
 
 # @st.cache_data
 def load_fipcodes():
-    fips_path = r"C:\Users\dcedr\Documents\dashboard_codes\adsef_centros\counties_fips.csv"
+    fips_path = "counties_fips.csv"
+    # fips_path = r"C:\Users\dcedr\Documents\dashboard_codes\adsef_centros\counties_fips.csv"
     return pd.read_csv(fips_path,
                        dtype={"COUNTY":str, "COUNTYFIPS":str},
                        low_memory=False)     
@@ -70,7 +72,7 @@ logobuff1, logo1, title, logo2, logobuff2 = st.columns([0.06, 0.15, 0.62, 0.10, 
 with logo1:
     st.markdown("""<a href="https://rcmi.rcm.upr.edu/" hreflang="en" target="_blank">
                       <img style="vertical-align:top; background-color:white; font-size:16px; color:black;"
-                      src="https://raw.githubusercontent.com/dylancedres/SDOH-Dashboard/main/logo_ccr_rcmi.png" 
+                      src="https://raw.githubusercontent.com/dylancedres/CentrosADSEF-Dashboard/main/logo_ccr_rcmi_clear.png" 
                       alt="CCR RCMI Logo" width="176px" height="108px">
                 </a>""", unsafe_allow_html=True)
 
@@ -83,7 +85,7 @@ with title:
 with logo2:
     st.markdown("""<a href="https://www.aim-ahead.net/" hreflang="en" target="blank">
                     <img style="vertical-align:top; background-color:white; font-size:16px; color:black;"
-                    src="https://www.aim-ahead.net/media/4swfpq0h/aim_ahead_600x474.png?width=180&height=142&mode=max"
+                    src="https://raw.githubusercontent.com/dylancedres/CentrosADSEF-Dashboard/main/logo_adsef.png"
                     alt="AIM AHEAD Logo" width="164px" height="114px">
                 </a>""", unsafe_allow_html=True)
 
