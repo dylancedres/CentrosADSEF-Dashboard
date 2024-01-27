@@ -1,6 +1,6 @@
-# Social Determinants of Health
+# Centros de Adultos Mayores y Envejecientes
 
-### Setting up(Windows)
+### Setting up in Windows systems
 
 ```sh
 # Navigate to project directory
@@ -10,10 +10,10 @@ cd path\to\project
 pip install virtualenv
 
 # Create virtual env named 'sdoh'
-python -m venv sdoh
+python -m venv adsef
 
 # Activate the virtual environment 
-.\sdoh\Script\activate
+.\adsef\Script\activate
 
 # Upgrade pip 
 python.exe -m pip install --upgrade pip
@@ -22,7 +22,7 @@ python.exe -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### Setting up in Unix systems
+### Setting up in UNIX systems
 ```bash
 # Navigate to project directory
 cd /path/to/project
@@ -30,11 +30,11 @@ cd /path/to/project
 # Install virtualenv 
 sudo pip install virtualenv 
 
-# Create virtual env named 'sdoh'
-python3 -m venv sdoh
+# Create virtual env named 'adsef'
+python3 -m venv adsef
 
 # Activate the virtual environment 
-source sdoh/bin/activate
+source adsef/bin/activate
 
 # Upgrade pip 
 pip install --upgrade pip
