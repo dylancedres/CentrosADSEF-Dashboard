@@ -64,14 +64,14 @@ fipcodes = load_fipcodes()  # FIPS codes of Puerto Rico's counties
 
 
 ### Dashboard Main Title ###
-logobuff1, logo1, title, logo2, logobuff2 = st.columns([0.06, 0.15, 0.62, 0.10, 0.09])
+logobuff1, logo1, title, logo2, logobuff2 = st.columns([0.05, 0.12, 0.66, 0.10, 0.09])
 
 
 with logo1:
     st.markdown("""<a href="https://rcmi.rcm.upr.edu/" hreflang="en" target="_blank">
-                      <img style="vertical-align:top; background-color:white; font-size:16px; color:black;"
+                      <img style="vertical-align:top; font-size:16px; color:black;"
                       src="https://raw.githubusercontent.com/dylancedres/CentrosADSEF-Dashboard/main/logo_ccr_rcmi_clear.png" 
-                      alt="CCR RCMI Logo" width="176px" height="108px">
+                      alt="CCR RCMI Logo" width="156px" height="150px">
                 </a>""", unsafe_allow_html=True)
 
 with title:
@@ -84,7 +84,7 @@ with logo2:
     st.markdown("""<a href="https://www.aim-ahead.net/" hreflang="en" target="blank">
                     <img style="vertical-align:top; background-color:white; font-size:16px; color:black;"
                     src="https://raw.githubusercontent.com/dylancedres/CentrosADSEF-Dashboard/main/logo_adsef.png"
-                    alt="AIM AHEAD Logo" width="164px" height="114px">
+                    alt="ADSEF Logo" width="160px" height="120px">
                 </a>""", unsafe_allow_html=True)
 
 
