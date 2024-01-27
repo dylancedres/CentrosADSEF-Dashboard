@@ -221,7 +221,7 @@ with tabs_long_list:
             st.caption("Total de Centros:  %s" % center_total)
             
             st.subheader(body="Lista de Centros de %s" % current_county,
-                         anchor="Centros_De_%s" % current_county,
+                         # anchor="Centros_De_%s" % current_county,
                          divider="orange")
             
             
