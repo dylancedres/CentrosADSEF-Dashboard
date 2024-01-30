@@ -76,7 +76,7 @@ with logo1:
 
 with title:
     # Application's Main Title (CENTER)
-    st.markdown("""<p style="text-align:center; font-weight:bold; font-size:39px">
+    st.markdown("""<p style="text-align:center; font-weight:bold; font-size:36px">
                     <br>Centros de Adultos Mayores y Envejecientes en Puerto Rico</p>
                 """, unsafe_allow_html=True)
     
